@@ -1,0 +1,121 @@
+body {
+  font-family: 'Tinos', serif;
+  background-image: url(../img/bg.png);
+}
+
+.page {
+  background: url(../img/rag.png) repeat-x;
+  padding: 2em 0;
+}
+
+h1 {
+  background: url("../img/logo-bg.png") no-repeat 50% 0;
+}
+
+h1 a {
+	padding-top: 117px;
+	height: 162px;
+	display: block;
+	text-align: center;
+}
+.mast {
+  height: 0px;
+}
+.mast::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.navbar ul {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+li a {
+  text-decoration: none;
+}
+.footer {
+  background: url("../img/ornament.png") 50% 0 repeat-x;
+  padding: 40px 0px 20px;
+}
+/*.figure {
+  width: 10%;
+}*/
+.cf::after {
+  /*content: "";
+  clear:both;
+  display: block;*/
+  content: ".";
+  display: block;
+  /*height: 0;*/
+  clear: both;
+  visibility: hidden;
+}
+.main h2 {
+  text-align: center;
+}
+.italic {
+  font-style: italic;
+}
+
+ol {
+  list-style: none;
+}
+@media (min-width: 1300px) {
+  .mast {
+    float: none;
+    width: auto;
+  }
+
+  .image-grid {
+    display: block;
+    width: 70%;
+    float: right;
+  }
+
+  h1 {
+    float: left;
+    width: 25%;
+    display: block;
+    margin-right: 40px;
+  }
+  /*.header {
+    float:left;
+    width:25%;
+  }*/
+  .navbar ul {
+    /*display: inline-block;*/
+    float: right;
+    width: 100%;
+  }
+
+  .navbar li {
+    float: left;
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: thin solid black;
+    text-align: center;
+    width: 20%;
+  }
+
+  .main {
+    /*margin-top: 20px;*/
+  }
+
+  .figure {
+    float: left;
+    width: 15%;
+  }
+
+  .figure img {
+    width: 75%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
