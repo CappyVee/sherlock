@@ -32,9 +32,29 @@ a:hover {
 	width: 31.875%;
 }
 
+li {
+  float: left;
+  margin-top: 20px;
+}
+
+li:nth-child(3n+1) {
+  clear: both;
+}
+
 li a {
   text-decoration: none;
 }
+
+.caption {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.caption strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 
 .footer {
   background: url("../img/ornament.png") 50% 0 repeat-x;
@@ -52,6 +72,13 @@ li a {
   clear: both;
   visibility: hidden;
 }
+
+/*#my-cf::after {
+  content: "";
+  display: table;
+  clear:both;
+
+}*/
 
 /*.cf::after {
   content: ".";
@@ -101,7 +128,8 @@ ul.navbar::after {
 }
 
 .figure img {
-  max-width: 80%;
+  float:left;
+  max-width: 20%;
   margin-left: 30px;
   margin-right: 30px;
   border-radius: 4px;
@@ -115,11 +143,11 @@ ul.navbar::after {
     width: auto;
   }
 
-  .image-grid {
+  /*.image-grid {
     display: block;
     width: 70%;
     float: right;
-  }
+  }*/
 
 
   h1 {
@@ -171,15 +199,7 @@ ul.navbar::after {
     text-align: center;
   }
 
-  .caption {
-    font-size: 16px;
-    margin-top: 10px;
-  }
 
-  .caption strong {
-    font-size: 20px;
-    font-weight: bold;
-  }
 
   .image-grid {
     max-width: 100%;
